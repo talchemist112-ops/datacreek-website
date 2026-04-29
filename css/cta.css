@@ -1,0 +1,48 @@
+/* ============================================
+   DATA CREEK System — CTA Section
+   ============================================ */
+
+.cta-section {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: var(--white);
+  text-align: center;
+  padding: var(--space-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(243, 156, 18, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section h2 {
+  color: var(--white);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+.cta-section p {
+  opacity: 0.9;
+  font-size: var(--font-size-lg);
+  max-width: 550px;
+  margin: 0 auto var(--space-lg);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}

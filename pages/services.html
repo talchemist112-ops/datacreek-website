@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DATA CREEK System services — cloud migration, database modernization, cybersecurity, HA/DR, DevOps automation, and managed IT services.">
+  <meta name="keywords" content="DATA CREEK System, cloud migration, database modernization, cybersecurity, HA/DR, DevOps, Oracle, managed services">
+  <meta property="og:title" content="Our Services — DATA CREEK System">
+  <meta property="og:description" content="Enterprise IT services: cloud migration, database modernization, cybersecurity, HA/DR, and DevOps automation.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <title>Our Services — DATA CREEK System</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/services.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+  <link rel="stylesheet" href="../css/cta.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-detail:last-child { border-bottom: none; }
+    .service-detail:nth-child(even) .service-detail-content { order: 2; }
+    .service-detail:nth-child(even) .service-detail-visual { order: 1; }
+    .service-detail-content h3 { font-size: var(--font-size-xl); margin-bottom: var(--space-sm); }
+    .service-detail-content p { color: #555; margin-bottom: var(--space-sm); }
+    .service-detail-content ul { margin: var(--space-sm) 0; }
+    .service-detail-content ul li { padding: 6px 0; padding-left: 24px; position: relative; color: #555; font-size: var(--font-size-sm); }
+    .service-detail-content ul li::before { content: ''; position: absolute; left: 0; top: 12px; width: 8px; height: 8px; border-radius: 50%; background: var(--secondary); }
+    .service-detail-visual {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: var(--border-radius-lg);
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-detail-visual::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(243, 156, 18, 0.15) 0%, transparent 60%);
+    }
+    .service-detail-visual svg { width: 80px; height: 80px; stroke: var(--white); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; position: relative; z-index: 1; }
+
+    .outcomes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
+    .outcome-item { display: flex; gap: var(--space-sm); }
+    .outcome-icon { width: 48px; height: 48px; background: linear-gradient(135deg, var(--secondary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .outcome-icon svg { width: 22px; height: 22px; stroke: var(--white); stroke-width: 2; fill: none; }
+    .outcome-text h4 { font-size: var(--font-size-base); margin-bottom: 4px; }
+    .outcome-text p { font-size: var(--font-size-sm); color: #666; margin-bottom: 0; }
+
+    @media (max-width: 768px) {
+      .service-detail { grid-template-columns: 1fr; }
+      .service-detail:nth-child(even) .service-detail-content { order: 1; }
+      .service-detail:nth-child(even) .service-detail-visual { order: 2; }
+      .outcomes-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/logo-header-bg.png" alt="DATA CREEK System" class="logo-img">
+        <span class="logo-name">DATA <span class="highlight">CREEK</span> System</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Services</div>
+      <h1>Core Service Areas</h1>
+      <p>End-to-end enterprise technology services built for organizations where downtime, data loss, and compliance gaps are non-negotiable.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="services section">
+    <div class="container">
+      <h2 class="section-title">What We Deliver</h2>
+      <p class="section-subtitle">Comprehensive capabilities across cloud, database, security, and operations.</p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+          <h3>Cloud Migration & Implementation</h3>
+          <p>Enterprise-scale migrations to OCI, Azure, AWS, and GCP with architecture design, hybrid/multi-cloud patterns, and FinOps governance.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+          <h3>Database Modernization & Upgrades</h3>
+          <p>Full-lifecycle services across Oracle, SQL Server, MySQL/MariaDB, PostgreSQL, and MongoDB with zero-downtime methodology.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <h3>Database & Platform Migrations</h3>
+          <p>Zero-downtime migrations: AIX to Exadata Cloud@Customer, HP-UX to Oracle Linux, MiniCluster to ODA, and character-set conversions.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>High Availability & Disaster Recovery</h3>
+          <p>Oracle MAA-aligned HA/DR with GoldenGate active-active replication, Data Guard, and SQL Server bi-directional sync.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Database Security & Compliance</h3>
+          <p>Oracle AVDF, TDE with zero-downtime encryption, Key Vault AES-256 governance. NIST CSF 2.0 and Zero Trust aligned.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <h3>DevOps, Automation & Managed Services</h3>
+          <p>CI/CD, Infrastructure-as-Code, DevSecOps security gates, and SLA-based 24&times;7 managed or co-managed operations with DORA metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Deep Dive Into Our Services</h2>
+      <p class="section-subtitle">Enterprise-grade capabilities with zero/near-zero downtime execution.</p>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>Cloud Migration & Implementation</h3>
+          <p>We deliver multi-cloud and hybrid execution across all major platforms. Our cloud services include architecture design, cost optimization, and 24&times;7 monitoring.</p>
+          <ul>
+            <li>Oracle Cloud Infrastructure (OCI) migration and management</li>
+            <li>Microsoft Azure, AWS, and Google Cloud deployments</li>
+            <li>Hybrid and multi-cloud deployment patterns</li>
+            <li>Cloud security and compliance assessments</li>
+            <li>DR planning and recovery validation</li>
+            <li>FinOps cost governance and billing optimization</li>
+            <li>24&times;7 cloud monitoring and operations</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>Database Modernization & Platform Migrations</h3>
+          <p>We modernize heterogeneous database estates with zero/near-zero downtime using Oracle ZDM methodology, Data Guard, and GoldenGate.</p>
+          <ul>
+            <li>Oracle Database upgrades (11g to 19c) with performance tuning</li>
+            <li>AIX to Exadata Cloud@Customer Gen2 migration (zero-downtime)</li>
+            <li>HP-UX to Oracle Linux cross-platform migration</li>
+            <li>MiniCluster to Oracle Database Appliance (ODA)</li>
+            <li>Character-set conversion (AR8MSWIN1256 to AL32UTF8)</li>
+            <li>SQL Server, MySQL/MariaDB, PostgreSQL, and MongoDB services</li>
+            <li>Backup/recovery engineering and consolidation</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>High Availability & Disaster Recovery</h3>
+          <p>HA/DR architecture and operating runbooks aligned to target RTO/RPO and business criticality, with validated recovery readiness through planned testing.</p>
+          <ul>
+            <li>Oracle GoldenGate active-active bi-directional replication</li>
+            <li>Oracle Data Guard for failover and switchover</li>
+            <li>SQL Server bi-directional synchronization</li>
+            <li>Oracle Maximum Availability Architecture (MAA) tiers</li>
+            <li>Conflict-aware active-active topologies</li>
+            <li>Recovery validation and runbook operationalization</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>Database Security & Compliance</h3>
+          <p>We strengthen database security and audit readiness using centralized controls, encryption, and compliance-aligned architecture.</p>
+          <ul>
+            <li>Oracle Audit Vault & Database Firewall (AVDF) — centralized audit and SQL injection protection</li>
+            <li>Transparent Data Encryption (TDE) via zero-downtime enablement</li>
+            <li>Oracle Key Vault (OKV) for AES-256 encryption key governance</li>
+            <li>NIST CSF 2.0 alignment and Zero Trust architecture</li>
+            <li>DevSecOps aligned to NIST Secure Software Development Framework (SSDF)</li>
+            <li>Compliance consulting for regulated industries</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>DevOps, Automation & Managed Services</h3>
+          <p>We implement CI/CD with a platform engineering mindset — creating repeatable golden paths and self-service workflows with embedded security controls.</p>
+          <ul>
+            <li>CI/CD pipelines and Infrastructure-as-Code</li>
+            <li>Self-service developer platforms and golden paths</li>
+            <li>Embedded security gates (DevSecOps / NIST SSDF)</li>
+            <li>Observability-by-design and monitoring</li>
+            <li>DORA metrics-based performance measurement</li>
+            <li>SLA-based 24&times;7 fully managed or co-managed services</li>
+            <li>Incident response, health checks, and continuous optimization</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-content">
+          <h3>Oracle ERP — Strategic Offering</h3>
+          <p>We position Oracle ERP as a strategic pillar because ERP success is inseparable from the reliability, scalability, and security of the underlying data platform.</p>
+          <ul>
+            <li>Solution architecture and technical advisory for ERP ecosystems</li>
+            <li>Oracle E-Business Suite R12 administration and cloning</li>
+            <li>EBS to OCI cloud migration (architecture, VPN, VCN, load balancers, SSL)</li>
+            <li>Reliability engineering for databases protecting ERP workflows</li>
+            <li>SAP to Oracle EBS migration support</li>
+            <li>Oracle EBS and Salesforce integration using SOA/OSB</li>
+            <li>Oracle Fusion (HCM) integration using OIC</li>
+          </ul>
+        </div>
+        <div class="service-detail-visual">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS OUTCOMES -->
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h2 class="section-title">Business Outcomes We Deliver</h2>
+      <p class="section-subtitle">Technical execution translated into board-level outcomes.</p>
+      <div class="outcomes-grid">
+        <div class="outcome-item reveal">
+          <div class="outcome-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="outcome-text">
+            <h4>Zero Downtime Transformation</h4>
+            <p>Production-continuity-first approach using Oracle ZDM, Data Guard, and GoldenGate with measurable cutover windows and validated rollback.</p>
+          </div>
+        </div>
+        <div class="outcome-item reveal">
+          <div class="outcome-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="outcome-text">
+            <h4>Cyber Resilience & Audit Readiness</h4>
+            <p>NIST CSF 2.0 aligned — centralized audit (AVDF), AES-256 encryption (TDE + OKV), and Zero Trust-ready security architecture.</p>
+          </div>
+        </div>
+        <div class="outcome-item reveal">
+          <div class="outcome-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div class="outcome-text">
+            <h4>Cloud Economics (FinOps)</h4>
+            <p>Cost governance as an operating discipline — usage transparency, ownership accountability, and optimization connecting engineering to financial outcomes.</p>
+          </div>
+        </div>
+        <div class="outcome-item reveal">
+          <div class="outcome-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <div class="outcome-text">
+            <h4>AI-Ready Data Platforms</h4>
+            <p>Governed, resilient data foundations with controls for secure and compliant AI adoption — built in, not bolted on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Need a Custom Solution?</h2>
+      <p>Contact us to discuss your requirements, request a capability briefing, or explore an initial assessment engagement.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        <a href="portfolio.html" class="btn btn-secondary">View Our Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../assets/images/logo-dark-bg.png" alt="DATA CREEK System" class="footer-logo-img">
+          <p>Transforming mission-critical IT with zero downtime and maximum resilience.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Cloud Migration</a></li>
+            <li><a href="services.html">Database Modernization</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">HA/DR Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@data-creek.com">info@data-creek.com</a></li>
+            <li><a href="tel:+923013003871">+92 301 300 3871</a></li>
+            <li>Office B-21 Aqeel Plaza<br>Khana Pull, Islamabad, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 DATA CREEK System. All rights reserved.</span>
+        <span><a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms-of-service.html">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

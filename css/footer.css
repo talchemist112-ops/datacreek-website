@@ -1,0 +1,102 @@
+/* ============================================
+   DATA CREEK System — Footer
+   ============================================ */
+
+.footer {
+  background: var(--dark);
+  color: var(--white);
+  padding: var(--space-xl) 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.footer-brand .footer-logo-img {
+  height: 70px;
+  width: auto;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-brand .logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.footer-brand .logo-text span {
+  color: var(--accent);
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+  max-width: 300px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: var(--space-md);
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  background: var(--secondary);
+}
+
+.footer-social a svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--white);
+}
+
+.footer-column h4 {
+  color: var(--white);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-sm);
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+}
+
+.footer-column ul li a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-md) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom a:hover {
+  color: var(--accent);
+}

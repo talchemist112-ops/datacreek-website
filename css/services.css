@@ -1,0 +1,74 @@
+/* ============================================
+   DATA CREEK System — Services Section
+   ============================================ */
+
+.services {
+  background: var(--light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 2px 12px var(--shadow);
+  border-top: 4px solid var(--secondary);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px var(--shadow-lg);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+}
+
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card h3 {
+  margin-bottom: var(--space-xs);
+  font-size: 20px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.service-card .learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-sm);
+}
+
+.service-card .learn-more:hover {
+  color: var(--accent);
+  gap: 10px;
+}

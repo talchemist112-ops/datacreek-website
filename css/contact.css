@@ -1,0 +1,123 @@
+/* ============================================
+   DATA CREEK System — Contact Page
+   ============================================ */
+
+.contact-section { background: var(--light); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.contact-info h3 {
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-xl);
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: var(--space-lg);
+}
+
+.info-item {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.info-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--white);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.info-text h4 { font-size: var(--font-size-base); margin-bottom: 4px; }
+.info-text p { color: #555; font-size: var(--font-size-sm); margin-bottom: 0; }
+
+.contact-form-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.contact-form-card h3 {
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-xl);
+}
+
+.form-group {
+  margin-bottom: var(--space-sm);
+}
+
+.form-group label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  color: var(--text);
+  transition: var(--transition);
+  background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(46, 134, 222, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.form-submit {
+  margin-top: var(--space-md);
+}
+
+.form-submit .btn {
+  width: 100%;
+  padding: 16px;
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,308 @@
+/* ============================================
+   DATA CREEK System — Portfolio / Case Studies
+   ============================================ */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.case-study-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: var(--transition);
+}
+
+.case-study-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px var(--shadow-lg);
+}
+
+.case-study-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: var(--space-md) var(--space-lg);
+  color: var(--white);
+  position: relative;
+}
+
+.case-study-header .case-tag {
+  display: inline-block;
+  background: rgba(243, 156, 18, 0.2);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.case-study-header h3 {
+  color: var(--white);
+  font-size: var(--font-size-lg);
+  margin-bottom: 0;
+}
+
+.case-study-body {
+  padding: var(--space-md) var(--space-lg);
+}
+
+.case-detail {
+  margin-bottom: var(--space-sm);
+}
+
+.case-detail .detail-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--secondary);
+  margin-bottom: 4px;
+}
+
+.case-detail p {
+  color: #555;
+  font-size: var(--font-size-sm);
+  margin-bottom: 0;
+}
+
+.case-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border);
+}
+
+.tech-tag {
+  background: var(--light);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  background: var(--white);
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.tech-category {
+  text-align: center;
+  padding: var(--space-md);
+  border-radius: var(--border-radius-lg);
+  background: var(--light);
+  transition: var(--transition);
+}
+
+.tech-category:hover {
+  background: var(--white);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.tech-category-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto var(--space-sm);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-category-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--white);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tech-category h4 {
+  font-size: var(--font-size-base);
+  color: var(--primary);
+  margin-bottom: var(--space-xs);
+}
+
+.tech-category .tech-list {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Industries Section */
+.industries {
+  background: var(--light);
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.industry-card {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-lg);
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.industry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-lg);
+}
+
+.industry-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-sm);
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: var(--white);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.industry-card h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-xs);
+}
+
+.industry-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Delivery Model Section */
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.delivery-card {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  border-radius: var(--border-radius-lg);
+  background: var(--white);
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: var(--transition);
+}
+
+.delivery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-lg);
+}
+
+.delivery-number {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-sm);
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.delivery-card h3 {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--space-xs);
+}
+
+.delivery-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Page hero banner (shared across inner pages) */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  padding: 140px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(46, 134, 222, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero h1 {
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+}
+
+.page-hero p {
+  opacity: 0.9;
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: var(--font-size-sm);
+  opacity: 0.7;
+  margin-bottom: var(--space-sm);
+}
+
+.breadcrumb a {
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
+  .delivery-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid { grid-template-columns: 1fr; }
+  .tech-stack-grid { grid-template-columns: 1fr; }
+  .industries-grid { grid-template-columns: 1fr; }
+  .delivery-grid { grid-template-columns: 1fr; }
+}

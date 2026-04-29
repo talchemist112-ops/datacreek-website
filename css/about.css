@@ -1,0 +1,129 @@
+/* ============================================
+   DATA CREEK System — About Section
+   ============================================ */
+
+.about {
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.about-content h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.about-content .subtitle {
+  color: var(--secondary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.about-content p {
+  color: #555;
+  margin-bottom: var(--space-md);
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-feature .check {
+  width: 24px;
+  height: 24px;
+  background: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-feature .check svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--white);
+  stroke-width: 3;
+  fill: none;
+}
+
+.about-feature span {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text);
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-image-box {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  color: var(--white);
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image-box .experience-badge {
+  text-align: center;
+}
+
+.about-image-box .exp-number {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.about-image-box .exp-text {
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+  margin-top: var(--space-xs);
+}
+
+.about-image-box .floating-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 16px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  color: var(--text);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.about-image-box .floating-card.top-right {
+  top: -15px;
+  right: -15px;
+}
+
+.about-image-box .floating-card.bottom-left {
+  bottom: -15px;
+  left: -15px;
+}
+
+.floating-card .card-number {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--secondary);
+  display: block;
+}
